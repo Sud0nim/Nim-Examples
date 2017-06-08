@@ -12,9 +12,8 @@ proc stringsToIntegers(input: string): seq =
   result = integers
 
 while true:
-  var 
-    input = readline(stdin)
-    numbers = stringsToIntegers(input)
+  var
+    numbers = stringsToIntegers(readline(stdin))
     expectedSum = fac(numbers[0] - 1)
     actualSum = 0
   for i in 1..numbers[0]:
