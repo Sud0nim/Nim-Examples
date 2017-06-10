@@ -64,10 +64,13 @@ while true:
         for g in 1..4:
           for h in 1..4:
             for k in 1..4:
-              var result = operation(operation(operation(operation(operation(p[0], p[1], k), p[2], h), p[3], g), p[4], j), p[5], i)
+              var result = operation(operation(operation(operation(operation(
+                                     p[0], p[1], k), p[2], h), p[3], g), p[4], j), p[5], i)
               if result == answer:
-                echo p[0], operator(k), p[1],operator(h), p[2], operator(g), p[3], operator(j), p[4], operator(i), p[5], " = ", result
+                echo int(p[0]), operator(k), int(p[1]), operator(h), int(p[2]), operator(g), 
+                         int(p[3]), operator(j), int(p[4]), operator(i), int(p[5]), " = ", int(result)
                 
+        
 
 #[
 
