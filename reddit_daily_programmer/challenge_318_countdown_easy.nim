@@ -1,4 +1,6 @@
 
+# https://www.reddit.com/r/dailyprogrammer/comments/6fe9cv/20170605_challenge_318_easy_countdown_game_show/
+
 import strutils
 
 iterator permutations[T](s: openarray[T]): seq[T] =
