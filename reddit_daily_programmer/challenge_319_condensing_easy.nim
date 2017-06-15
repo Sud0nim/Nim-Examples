@@ -1,3 +1,6 @@
+
+# https://www.reddit.com/r/dailyprogrammer/comments/6grwny/20170612_challenge_319_easy_condensing_sentences/
+
 include strutils
 
 var 
