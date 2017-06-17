@@ -8,7 +8,7 @@ var
   input2 = "Deep episodes of Deep Space Nine came on the television only after the news."
   input3 = "Digital alarm clocks scare area children."
 
-proc joinable(a,b: string): string =
+proc joinedTo(a,b: string): string =
   for i in 0..a.high:
     for j in countdown(b.high, 0):
       if a[i..a.high] == b[0..j]:
@@ -20,8 +20,8 @@ proc recombobulate(input: string): string =
   for n in 0..sentence.high:
     if n == 0:
       result = sentence[n]
-    elif result.joinable(sentence[n]) != nil:
-      result &= result.joinable(sentence[n])
+    elif result.joinedTo sentence[n] != nil:
+      result &= result.joinedTo sentence[n]
     else:
       result &= " " & sentence[n]
 
