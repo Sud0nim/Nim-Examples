@@ -16,7 +16,7 @@ proc largest_factor*(text: string): int =
 proc largest_pallindrome(text: string): int =
   var 
     max_factor = largest_factor(text)
-    min_factor = int(parse_float(text) / 2)
+    min_factor = int(10.pow(parse_float(text) - 1))
     result, number = 0
   for i in countdown(max_factor, min_factor):
     for j in countdown(max_factor, min_factor):
